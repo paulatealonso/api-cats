@@ -5,13 +5,13 @@ const PORT = 3000;
 const cats = require("./cats.json");
 
 app.get("/", (request, response) => {
-    response.send({response: true, code: 200, cats: users});
+    response.send({response: true, code: 200, cats: cats});
 });
 
 app.get("/:id", (request, response) => {
     const { id } = request.params;
-    const results = users.filter(user => user.id === Number(id));
-    response.status(200).send({response: true, users: results});
+    const results = cats.filter(cat => cat.id === Number(id));
+    response.status(200).send({response: true, cats: results});
 });
 
 app.listen(PORT, () => {
