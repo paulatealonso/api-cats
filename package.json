@@ -1,0 +1,24 @@
+{
+  "name": "api-cats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulatealonso/api-cats.git"
+  },
+  "author": "Paula Alonso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulatealonso/api-cats/issues"
+  },
+  "homepage": "https://github.com/paulatealonso/api-cats#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
