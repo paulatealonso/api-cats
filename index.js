@@ -6,11 +6,11 @@ const PORT = 3000;
 const cats = require("./cats.json");
 const adopted = require("./adopted.json");
 
-app.get("/cats", (request, response) => {
+app.get("/", (request, response) => {
     response.send({response: true, code: 200, cats: cats});
 });
 
-app.get("/cats:id", (request, response) => {
+app.get("/:id", (request, response) => {
     const { id } = request.params;
     const results = cats.filter(cat => cat.id === Number(id));
     response.status(200).send({response: true, cats: results});
